@@ -7,3 +7,10 @@ body{
 main{
     flex-grow: 1;
 }
+
+.img-categoria{
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* Mantener el aspecto de la imagen y saca lo del exterior */
+    object-fit: cover;
+}
