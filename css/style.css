@@ -14,3 +14,7 @@ main{
     /* Mantener el aspecto de la imagen y saca lo del exterior */
     object-fit: cover;
 }
+
+.videoInicial{
+
+}
