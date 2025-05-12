@@ -14,3 +14,15 @@ main{
     /* Mantener el aspecto de la imagen y saca lo del exterior */
     object-fit: cover;
 }
+<<<<<<< HEAD
+=======
+
+.videoInicial{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+>>>>>>> dev
