@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abellesen Ignacio"> 
+    <meta name="description" content="Página de inicio de rollingSugar"> 
+    <!-- Link de boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+
+     <link rel="stylesheet" href="./css/style.css">
+
+      <title>Rolling Sugar</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">RollingSugar <i class="bi bi-app"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/recetas.html">Recetas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/produucto.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div class="container py-5">
+          <div class="row g-5">
+              <div class="col-md-6">
+                  <img src="" class="img-fluid rounded" alt="Imagen de Productos">
+              </div>
+              <div class="col-md-6">
+                  <h2>Formulario de Contacto</h2>
+                  <form>
+                      <div class="mb-3">
+                          <label for="nombreApellido" class="form-label">Nombre y Apellido</label>
+                          <input type="text" class="form-control" id="nombreApellido" placeholder="ej: Juan Perez">
+                      </div>
+                      <div class="mb-3">
+                          <label for="pais" class="form-label">País</label>
+                          <input type="text" class="form-control" id="pais" placeholder="Ej: Argentina">
+                      </div>
+                      <div class="mb-3">
+                          <label for="provinciaEstado" class="form-label">Provincia o Estado</label>
+                          <input type="text" class="form-control" id="provinciaEstado" placeholder="Ej: Tucumán">
+                      </div>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Ej: juanperez@example.com">
+                      </div>
+                      <div class="mb-3">
+                          <label for="tareaMaquetado" class="form-label">Tarea de maquetado</label>
+                          <input type="text" class="form-control" id="tareaMaquetado" value="3815333000" readonly>
+                      </div>
+                      <div class="mb-3">
+                          <label for="consulta" class="form-label">Consulta</label>
+                          <textarea class="form-control" id="consulta" rows="3" placeholder="agregue aqui su consulta"></textarea>
+                      </div>
+                      <button type="button" class="btn btn-primary w-25" data-bs-toggle="modal" data-bs-target="#EnviarModal">Enviar</button>
+  
+                      <div class="modal fade" id="EnviarModal" tabindex="-1" aria-labelledby="EnviarModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="EnviarModalLabel">¡Sus Datos fueron enviados con Exito!</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <p>¡Gracias por confiar en nuestros productos y servicios!</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary">Guardar Datos</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </main>
+
+      <footer class="bg-primary py-4 text-center text-light ">
+      <h5 class="fs-4 ">Seguinos en:</h5>
+      <a href="./pages/error404.html " class="link-light fs-1"><i class="bi bi-instagram"></i></a>
+      <a href="./pages/error404.html " class="link-light fs-1 mx-2"><i class="bi bi-twitter"></i></a>
+      <a href="./pages/error404.html " class="link-light fs-1 mx-2"><i class="bi bi-tiktok"></i></a>
+      <a href="./pages/error404.html " class="link-light fs-1"><i class="bi bi-whatsapp"></i></a>
+      <div class="border my- row-gap-0"></div>
+      <p>© Todos los derechos reservados</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
+
