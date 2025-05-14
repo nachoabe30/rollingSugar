@@ -43,60 +43,60 @@
     </header>
 
     <main>
-       <div class="container py-5">
-    <div class="row g-5">
-        <div class="col-md-6">
-            <img src="https://images.pexels.com/photos/863006/pexels-photo-863006.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid rounded-4 border" alt="Imagen de tortas">
-        </div>
-        <div class="col-md-6">
-            <h2>Formulario de Contacto</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="nombreApellido" class="form-label">Nombre y Apellido</label>
-                    <input type="text" class="form-control" id="nombreApellido" placeholder="ej: Juan Perez" minlength="3" maxlength="100" required>
-                    <div class="form-text">Ingrese su nombre y apellido (mínimo 3, máximo 100 caracteres).</div>
+     <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <img src="https://images.pexels.com/photos/863006/pexels-photo-863006.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid rounded-4 border" alt="Imagen de tortas">
                 </div>
-                <div class="mb-3">
-                    <label for="pais" class="form-label">País</label>
-                    <input type="text" class="form-control" id="pais" placeholder="Ej: Argentina" minlength="2" maxlength="50" required>
-                    <div class="form-text">Ingrese su país (mínimo 2, máximo 50 caracteres).</div>
-                </div>
-                <div class="mb-3">
-                    <label for="provinciaEstado" class="form-label">Provincia o Estado</label>
-                    <input type="text" class="form-control" id="provinciaEstado" placeholder="Ej: Tucumán" minlength="2" maxlength="50" required>
-                    <div class="form-text">Ingrese su provincia o estado (mínimo 2, máximo 50 caracteres).</div>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Ej: juanperez@example.com" required>
-                    <div class="form-text">Ingrese su dirección de correo electrónico.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="tareaMaquetado" class="form-label">Tarea de maquetado</label>
-                    <input type="text" class="form-control" id="tareaMaquetado" value="3815333000" readonly>
-                </div>
-                <button type="button" class="btn btn-primary w-25" data-bs-toggle="modal" data-bs-target="#EnviarModal">Enviar</button>
+                <div class="col-md-6">
+                    <h2>Formulario de Contacto</h2>
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nombreApellido" class="form-label required">Nombre y Apellido <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="nombreApellido" placeholder="ej: Juan Perez" minlength="3" maxlength="100" required>
+                            <div class="invalid-feedback">Por favor, ingrese su nombre y apellido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pais" class="form-label required">País <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="pais" placeholder="Ej: Argentina" minlength="2" maxlength="50" required>
+                            <div class="invalid-feedback">Por favor, ingrese su país.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="provinciaEstado" class="form-label required">Provincia o Estado <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="provinciaEstado" placeholder="Ej: Tucumán" minlength="2" maxlength="50" required>
+                            <div class="invalid-feedback">Por favor, ingrese su provincia o estado.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label required">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Ej: juanperez@example.com" required>
+                            <div class="invalid-feedback">Por favor, ingrese su correo electrónico.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tareaMaquetado" class="form-label">Tarea de maquetado</label>
+                            <input type="text" class="form-control" id="tareaMaquetado" value="3815333000" readonly>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-25">Enviar</button>
 
-                <div class="modal fade" id="EnviarModal" tabindex="-1" aria-labelledby="EnviarModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-md">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="EnviarModalLabel">¡Sus Datos fueron enviados con exito!</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>¡Gracias por confiar en nuestros productos y servicios!</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">Guardar</button>
+                        <div class="modal fade" id="EnviarModal" tabindex="-1" aria-labelledby="EnviarModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="EnviarModalLabel">¡Sus Datos fueron enviados con exito!</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>¡Gracias por confiar en nuestros productos y servicios!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
-    </div>
-</div>
     </main>
 
       <footer class="bg-primary py-4 text-center text-light ">
